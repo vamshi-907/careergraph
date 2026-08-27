@@ -1,0 +1,453 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+button {
+  font-family: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  background: #111827;
+  color: #ffffff;
+  padding: 72px 8%;
+  text-align: center;
+}
+
+.header > div {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #64748b;
+}
+
+.header .eyebrow {
+  color: #cbd5e1;
+}
+
+.header h1 {
+  margin: 0 auto 18px;
+  max-width: 750px;
+  font-size: 52px;
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.subtitle {
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+  width: 88%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 55px 0 80px;
+}
+
+/* =========================
+   SKILL SECTION
+========================= */
+
+.skill-section {
+  margin-bottom: 55px;
+}
+
+.skill-section h2 {
+  margin: 0 0 22px;
+  color: #172033;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+/* IMPORTANT:
+   This allows ALL skills to display
+   properly and wrap onto new rows.
+*/
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+}
+
+/* =========================
+   SKILL BUTTONS
+========================= */
+
+.skill-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 105px;
+  min-height: 46px;
+
+  padding: 11px 20px;
+
+  border: 1px solid #d7deea;
+  border-radius: 999px;
+
+  background: #ffffff;
+  color: #172033;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.skill-button:hover {
+  background: #eef2f7;
+  border-color: #94a3b8;
+  transform: translateY(-1px);
+}
+
+/* Selected skill */
+
+.skill-button.active {
+  background: #111827;
+  color: #ffffff;
+  border-color: #111827;
+  box-shadow: 0 5px 15px rgba(15, 23, 42, 0.15);
+}
+
+/* =========================
+   SELECTED SKILL
+========================= */
+
+.section-heading {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.section-heading .eyebrow {
+  color: #64748b;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #172033;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* =========================
+   PANELS
+========================= */
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 25px;
+  min-height: 330px;
+
+  box-shadow:
+    0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+.panel h3 {
+  margin: 0;
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  color: #172033;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/* =========================
+   JOB / COMPANY CARD
+========================= */
+
+.card {
+  padding: 18px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  border-bottom: 1px solid #edf0f4;
+}
+
+.card:last-child {
+  border-bottom: none;
+}
+
+.card strong {
+  color: #172033;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.card span {
+  color: #475569;
+  font-size: 15px;
+}
+
+.card small {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* =========================
+   RELATED SKILLS
+========================= */
+
+.related {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 0;
+
+  border-bottom: 1px solid #edf0f4;
+}
+
+.related:last-child {
+  border-bottom: none;
+}
+
+.related span {
+  color: #172033;
+  font-size: 16px;
+}
+
+.related strong {
+  color: #172033;
+  font-size: 15px;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.loading {
+  margin-bottom: 25px;
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+
+  color: #475569;
+  text-align: center;
+
+  font-weight: 600;
+}
+
+/* =========================
+   ERROR
+========================= */
+
+.error {
+  margin-bottom: 25px;
+  padding: 18px 20px;
+
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 14px;
+
+  color: #991b1b;
+  font-weight: 600;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.muted {
+  margin-top: 25px;
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 92%;
+  }
+
+  .header {
+    padding: 55px 6%;
+  }
+
+  .header h1 {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .skill-button {
+    min-width: auto;
+    flex: 0 0 auto;
+  }
+}
+
+/* =========================
+   GRAPH VIEW
+========================= */
+
+.graph-panel {
+  width: 100%;
+  margin-bottom: 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+.graph-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 24px 28px;
+
+  border-bottom: 1px solid #edf0f4;
+}
+
+.graph-header .eyebrow {
+  margin-bottom: 6px;
+  color: #64748b;
+}
+
+.graph-header h3 {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.graph-stats {
+  display: flex;
+  gap: 10px;
+}
+
+.graph-stats span {
+  padding: 8px 13px;
+
+  border-radius: 999px;
+
+  background: #f1f5f9;
+
+  color: #475569;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.graph-container {
+  width: 100%;
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fafbfc;
+}
+
+.graph-message {
+  min-height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #64748b;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.graph-error {
+  color: #b91c1c;
+}
+
+@media (max-width: 900px) {
+
+  .graph-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .graph-container {
+    overflow-x: auto;
+  }
+
+}
