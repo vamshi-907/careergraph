@@ -3,7 +3,7 @@ import GraphView from "./components/GraphView";
 
 import "./App.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://careergraph-api-m9m0.onrender.com";
 
 function App() {
   const [skills, setSkills] = useState([]);
