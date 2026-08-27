@@ -1052,23 +1052,27 @@ VITE_API_URL=https://your-backend-url
 
 The actual production URLs should be added after deployment.
 
-Hosted Demo
+H## Hosted Demo
 
-Frontend
+### Frontend
 
-TODO: Add deployed frontend URL
+https://careergraph-ivory.vercel.app/
 
-Backend
+### Backend
 
-TODO: Add deployed backend URL
+https://careergraph-api-m9m0.onrender.com
 
-API Health Check
+### API Health Check
 
-TODO: Add deployed backend health-check URL
+https://careergraph-api-m9m0.onrender.com/api/health
+
+### Graph API Example
+
+https://careergraph-api-m9m0.onrender.com/api/skills/React/graph
 
 GitHub Repository
 
-The GitHub repository should contain:
+https://github.com/vamshi-907/careergraph
 
 Full source code
 
